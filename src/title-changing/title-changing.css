@@ -1,0 +1,29 @@
+.row .title #left-title, .row .title #right-title{
+    font-size: 3.4rem;
+}
+
+.row #left-title {
+    text-align: right;
+}
+
+.row #right-title {
+    font-weight: bolder;
+    text-align: left;
+    color: #12b1eb;
+}
+
+.run-anim {
+    animation: fadeInOut 5s ease;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    } 
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

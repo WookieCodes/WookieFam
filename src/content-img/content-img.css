@@ -1,0 +1,8 @@
+.content-row-image img {
+    max-height: 500px;
+    border-radius: 50%;
+}
+
+#emotes {
+    border-radius: unset;
+}

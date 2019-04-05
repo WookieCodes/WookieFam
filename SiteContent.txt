@@ -1,0 +1,15 @@
+Content on Wookie site
+=============================
+-Twitch
+-Discord
+-Github
+-Subscriber Page (passport-twitch)
+-Merch
+
+-Schedule
+-About Me
+-Games
+-Charity
+-Pc specs/peripherals
+
+-Social Media
