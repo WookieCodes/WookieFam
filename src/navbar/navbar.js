@@ -14,6 +14,8 @@ import {
     DropdownItem
 } from 'reactstrap';
 
+import {NavLink as RoutingLink} from 'react-router-dom';
+
 export default class TopMenu extends React.Component {
     constructor(props) {
         super(props);
@@ -33,7 +35,8 @@ export default class TopMenu extends React.Component {
             const navLinks = this.props.sites.map( (site) => {
                 return(
                     <NavItem key={site.name}>
-                        <NavLink className="site-link text-right" href={site.url} target="_blank">{site.name}</NavLink>
+                        {/* <NavLink className="site-link text-right" to={site.url}>{site.name}</NavLink> */}
+                        <RoutingLink to={site.url}>{site.name}</RoutingLink>
                     </NavItem>
                 )
             })

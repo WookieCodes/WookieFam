@@ -34,7 +34,7 @@ export default class ContentText extends Component {
 
     render() {
         return(
-            <div className={"content-row-text col-6 align-self-center " + this.GetOrder()}>
+            <div className={"cr-text col-6 align-self-center " + this.GetOrder()}>
                 <h2>{this.props.title}</h2>
                 <p>{this.props.text}</p>
                 {this.DisplayLink()}

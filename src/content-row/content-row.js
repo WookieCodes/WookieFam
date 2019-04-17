@@ -22,9 +22,13 @@ export default class ContentRow extends Component {
     CreateContentRow = () => {
 
         return(
-            <div className="row">
-                <ContentText order={this.props.order} title={this.props.title} text={this.props.text} link={this.props.link}/>
-                <ContentImg id={this.props.id} order={this.props.order} imgPath={this.props.imgPath} link={this.props.link}/>
+            <div className={"cr " + (this.props.order === 1 ? "cr-order-left" : "cr-order-right")}>
+                <div className="container">
+                    <div className="row">
+                        <ContentText order={this.props.order} title={this.props.title} text={this.props.text} link={this.props.link}/>
+                        <ContentImg id={this.props.id} order={this.props.order} imgPath={this.props.imgPath} link={this.props.link}/>
+                    </div>
+                </div>
             </div>
         );
     }

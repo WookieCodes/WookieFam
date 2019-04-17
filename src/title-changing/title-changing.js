@@ -6,7 +6,7 @@ export default class Title extends Component {
         super(props);
         
         this.state = {
-            words: ["plays", "streams", "codes", "laughs", "throws", "eats"],
+            words: ["plays", "streams", "codes", "laughs", "throws", "noms"],
             index: 0
         }
 
