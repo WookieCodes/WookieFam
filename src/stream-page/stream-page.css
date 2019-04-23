@@ -1,0 +1,31 @@
+.stream-intro-section .navbar {
+    background-color: #6441A4;
+}
+
+.canvas-stream {
+    background-color: #6441A4;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 0;
+    
+}
+
+.stream-intro-section-wrapper h2, .stream-intro-section-wrapper p {
+    color: #f5f5f5;
+}
+
+.stream-intro-section-wrapper h2 {
+    font-weight: bolder;
+}
+
+.twitch-embed-wrapper {
+    background-color: #6441A4;
+}
+
+.twitch-embed-wrapper p > a {
+    color: #f5f5f5;
+    font-weight: bold;
+    text-decoration: underline;
+}

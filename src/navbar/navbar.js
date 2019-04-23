@@ -28,6 +28,7 @@ export default class TopMenu extends React.Component {
         //Binds
         this.CreateSiteLinks = this.CreateSiteLinks.bind(this);
         this.CreateDropdown = this.CreateDropdown.bind(this);
+        this.setNavTheme = this.setNavTheme.bind(this);
     }
 
     CreateSiteLinks = () => {
@@ -35,8 +36,7 @@ export default class TopMenu extends React.Component {
             const navLinks = this.props.sites.map( (site) => {
                 return(
                     <NavItem key={site.name}>
-                        {/* <NavLink className="site-link text-right" to={site.url}>{site.name}</NavLink> */}
-                        <RoutingLink to={site.url}>{site.name}</RoutingLink>
+                        <RoutingLink className="site-link text-right nav-link" to={site.url}>{site.name}</RoutingLink>
                     </NavItem>
                 )
             })
@@ -77,10 +77,19 @@ export default class TopMenu extends React.Component {
             isOpen: !this.state.isOpen
         });
     }
+
+    setNavTheme = () => {
+        if (this.props.theme === "light") {
+            return " navbar-light"
+        } else {
+            return " navbar-dark"
+        }
+    }
+
     render() {
         return (
             <div>
-                <Navbar className="border-bottom" light expand="md">
+                <Navbar className={"border-bottom" + this.setNavTheme()} expand="md">
                     <NavbarBrand href="/">{this.props.brand}</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>

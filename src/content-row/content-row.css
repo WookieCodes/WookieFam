@@ -1,8 +1,14 @@
 .cr {
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
 }
 
-.cr-order-left {
+.cr-order-right {
     background-color: #f0f0f0;
+}
+
+.stream-info-section .cr-order-right {
+    background-color: hsl(261, 43%, 35%);
 }

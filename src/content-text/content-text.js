@@ -23,20 +23,23 @@ export default class ContentText extends Component {
 
     DisplayLink = () => {
         if (this.props.link) {
-            return (
-                <div>
-                    <br></br>
-                    <a href={this.props.link.url} target="_blank" rel="noopener noreferrer">{this.props.link.title}</a>
-                </div>
-            )
+            const links = this.props.link.map( (obj) => {
+                return (
+                    <div>
+                        <a href={obj.url} target="_blank" rel="noopener noreferrer">{obj.title}</a>
+                    </div>
+                )});
+
+            return links;
         }
     }
 
     render() {
         return(
-            <div className={"cr-text col-6 align-self-center " + this.GetOrder()}>
+            <div className={"cr-text col-6 align-self-center p-3 " + this.GetOrder()}>
                 <h2>{this.props.title}</h2>
                 <p>{this.props.text}</p>
+                <br></br>
                 {this.DisplayLink()}
             </div>
         );

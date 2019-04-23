@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import {} from './title-changing.css'
 
-export default class Title extends Component {
+export default class TitleChanging extends Component {
     constructor(props) {
         super(props);
         
         this.state = {
-            words: ["plays", "streams", "codes", "laughs", "throws", "noms"],
+            words: this.props.words,
             index: 0
         }
 

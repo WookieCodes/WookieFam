@@ -27,7 +27,7 @@ export default class ContentImg extends Component {
 
     generateImage = () => {
         if (this.imageHasLink()) {
-            return (<a href={this.props.link.url} target="_blank" rel="noopener noreferrer"><img id={this.props.id} src={this.props.imgPath} alt={this.props.title}/></a>);
+            return (<a href={this.props.link[0].url} target="_blank" rel="noopener noreferrer"><img id={this.props.id} src={this.props.imgPath} alt={this.props.title}/></a>);
         } else {
             return (<img id={this.props.id} src={this.props.imgPath} alt={this.props.title}/>);
         }
