@@ -6,9 +6,5 @@
 }
 
 .cr-order-right {
-    background-color: #f0f0f0;
-}
-
-.stream-info-section .cr-order-right {
-    background-color: hsl(261, 43%, 35%);
+    background-color: hsl(196, 100%, 10%);
 }
