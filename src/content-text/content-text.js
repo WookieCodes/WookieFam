@@ -25,7 +25,7 @@ export default class ContentText extends Component {
         if (this.props.link) {
             const links = this.props.link.map( (obj) => {
                 return (
-                    <div>
+                    <div key={obj.title}>
                         <a className="btn btn-info mb-2" href={obj.url} target="_blank" rel="noopener noreferrer">{obj.title}</a>
                     </div>
                 )});

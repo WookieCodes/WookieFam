@@ -37,9 +37,6 @@ export default class StreamPage extends Component {
                                                         <iframe title="twitch-player" className="embed-responsive-item" src="https://player.twitch.tv/?channel=wookie" allowFullScreen={true}></iframe>
                                                     </div>
                                                 </div>
-                                                {/* <div className="col-2 pl-0">
-                                                    <iframe className="embed-responsive-item w-100 h-100 border-0" src="https://www.twitch.tv/embed/wookie/chat?darkpopout"></iframe>
-                                                </div> */}
                                             </div>
                                     </div>
                                 </div>
@@ -57,7 +54,7 @@ export default class StreamPage extends Component {
                         link={[{ title: "Join the Discord!", url: 'https://discord.gg/wookieforc3' }]} />
                     <ContentRow order={1}
                         title='Games'
-                        text="I stream a variety of games, but lately most of them are shooters. I play: Fortnite, Destiny 2, Overwatch, Apex Legends, Beat Saber, Pok&eacute;mon Go and many more!"
+                        text="I stream a variety of games, but lately most of them are shooters. I play: League of Legends, Fortnite, Destiny 2, Overwatch, Apex Legends, Beat Saber, Pok&eacute;mon Go and many more!"
                         imgPath='/assets/VG-Event.jpeg' />
                     <ContentRow order={2}
                         title='Charity'

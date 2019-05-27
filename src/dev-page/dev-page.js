@@ -3,9 +3,8 @@ import {} from './dev-page.css'
 import Particles from 'react-particles-js';
 import TopNav from "../navbar/navbar";
 import { mySites } from '../App';
-import LinkList from '../link-list/link-list';
 import TitleChanging from '../title-changing/title-changing';
-import { mySocials, particlesSettings } from '../App'
+import { particlesSettings } from '../App'
 
 export default class DevPage extends Component {
     // constructor(props) {
@@ -13,7 +12,7 @@ export default class DevPage extends Component {
     // }
 
     render() {
-        const titleWords = ["plays", "streams", "codes", "laughs", "throws", "noms", "trolls", "dances"];
+        const titleWords = ["HTML", "CSS", "JS", "React", "Node.js"];
 
         return(
             <div className="dev-page">
@@ -24,8 +23,13 @@ export default class DevPage extends Component {
                         <div className="row mt-5">
                             <div className="left-col col-md-8 align-self-center">
                                 <div>
-                                    <TitleChanging words={titleWords} />
-                                    {/* <LinkList className="col-md-6 offset-md-1 float-left justify-content-start" links={mySocials} bkgdColor="#00020e" iconColor="#F5F5F5" /> */}
+                                    <TitleChanging left="I know" words={titleWords} />
+                                    <div className="row">
+                                        <div className="col-6"></div>
+                                        <div className="col-6 text-left">
+                                            <a id="portfolio-link" href="https://www.nishok.io">Click here for my portfolio</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-md-4">

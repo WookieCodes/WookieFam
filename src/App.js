@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 // Components
 import LinkList from './link-list/link-list';
@@ -25,8 +25,7 @@ export const mySocials = [
         // ];
 export const mySites = [
     { name: "Stream", url: "/stream" },
-    { name: "Dev", url: "/dev" },
-    { name: "Connect", url: "/connect" }
+    { name: "Dev", url: "/dev" }
 ]
 
 export const particlesSettings = {
@@ -152,7 +151,6 @@ class App extends Component {
                     <Route path="/" exact component={HomePage}/>
                     <Route path="/stream" component={StreamPage}/>
                     <Route path="/dev" component={DevPage}/>
-                    {/* <Route path="/connect" component={App}/>  */}
 
                     <section className="footer-wrapper">
                         <div className="footer row">
@@ -163,7 +161,6 @@ class App extends Component {
                         </div>
                     </section>
                 </div>
-
             </Router>
         );
     }

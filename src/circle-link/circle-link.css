@@ -13,13 +13,9 @@
 #instagram-span:hover #instagram-circle,
 #github-span:hover #github-circle {
     transition: color .5s ease;
-    color: #f5f5f5;
+    /* color: #f5f5f5; */
     border-radius: 50%;
     /* border: 2px solid #2A2D32; */
-}
-
-#github-span:hover #github {
-    color: #181515;
 }
 
 #twitch-span:hover #twitch{

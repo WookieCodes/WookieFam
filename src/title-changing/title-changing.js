@@ -38,7 +38,7 @@ export default class TitleChanging extends Component {
         return(
             <div className="title row d-flex">
                 <div className="col-sm-6 px-1">
-                    <h1 id="left-title">Wookie</h1>
+                    <h1 id="left-title">{this.props.left}</h1>
                 </div>
                 {this.changeWord()}
             </div>

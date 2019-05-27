@@ -25,7 +25,7 @@ export default class HomePage extends Component {
                         <div className="row mt-5">
                             <div className="left-col col-md-8 align-self-center">
                                 <div>
-                                    <TitleChanging words={titleWords}/>
+                                    <TitleChanging left="Wookie" words={titleWords}/>
                                     <LinkList className="col-md-6 offset-md-1 float-left justify-content-start" links={mySocials} bkgdColor="#00020E" iconColor="#F5F5F5" />
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ export default class HomePage extends Component {
                             title='Need a new website?'
                             text="I'm a full stack web-developer who likes to focus on making eye-catching websites for people. Get in touch with me if you're looking for a website!"
                             imgPath='/assets/coding.jpeg'
-                            link={[{ title: "DM me on Twitter", url: 'https://www.twitter.com/wookieforc3' }]} />
+                            link={[{ title: "Check out my portfolio", url: 'https://www.nishok.io' }]} />
                     </div>
                 </section>
             </div>
