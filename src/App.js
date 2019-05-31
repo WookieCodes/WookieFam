@@ -4,10 +4,11 @@ import './App.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 // Components
-import LinkList from './link-list/link-list';
-import HomePage from './home-page/home-page';
-import StreamPage from './stream-page/stream-page';
-import DevPage from './dev-page/dev-page';
+import LinkList from './components/link-list/link-list';
+import HomePage from './views/home-page/home-page';
+import StreamPage from './views/stream-page/stream-page';
+import DevPage from './views/dev-page/dev-page';
+import TestPage from './views/test-page/test-page';
 
 export const mySocials = [
     { name: "twitch", url: "https://www.twitch.tv/wookie" },
@@ -148,14 +149,14 @@ class App extends Component {
         return (
             <Router>
                 <div className="App">
-                    <Route path="/" exact component={HomePage}/>
+                    <Route path="/" exact component={TestPage}/>
                     <Route path="/stream" component={StreamPage}/>
                     <Route path="/dev" component={DevPage}/>
 
                     <section className="footer-wrapper">
                         <div className="footer row">
                             <div className="col-12 align-self-center">
-                                <p>Developed by Wookie</p>
+                                <a href="https://www.nishok.io">Developed by Wookie</a>
                                 <LinkList links={mySocials} bkgdColor="#62d5ff" iconColor="#00020e" />
                             </div>
                         </div>

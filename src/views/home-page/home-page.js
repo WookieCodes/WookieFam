@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import {} from './home-page.css'
-import TopNav from "../navbar/navbar";
-import LinkList from '../link-list/link-list';
-import TitleChanging from '../title-changing/title-changing';
-import ContentRow from '../content-row/content-row';
+import TopNav from "../../components/navbar/navbar";
+import LinkList from '../../components/link-list/link-list';
+import TitleChanging from '../../components/title-changing/title-changing';
+import ContentRow from '../../components/content-row/content-row';
 import Particles from 'react-particles-js';
 
-import { mySocials, mySites, particlesSettings } from '../App';
+import { mySocials, mySites, particlesSettings } from '../../App';
 
 export default class HomePage extends Component {
     // constructor(props) {

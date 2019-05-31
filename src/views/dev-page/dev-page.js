@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
 import {} from './dev-page.css'
 import Particles from 'react-particles-js';
-import TopNav from "../navbar/navbar";
-import { mySites } from '../App';
-import TitleChanging from '../title-changing/title-changing';
-import { particlesSettings } from '../App'
+import TopNav from "../../components/navbar/navbar";
+import TitleChanging from '../../components/title-changing/title-changing';
+import { mySites, particlesSettings } from '../../App'
 
 export default class DevPage extends Component {
     // constructor(props) {
@@ -13,6 +12,7 @@ export default class DevPage extends Component {
 
     render() {
         const titleWords = ["HTML", "CSS", "JS", "React", "Node.js"];
+        const titleWords2 = ["dream", "business", "home", "brand"];
 
         return(
             <div className="dev-page">
@@ -23,7 +23,7 @@ export default class DevPage extends Component {
                         <div className="row mt-5">
                             <div className="left-col col-md-8 align-self-center">
                                 <div>
-                                    <TitleChanging left="I know" words={titleWords} />
+                                    <TitleChanging left="create a" words={titleWords2} />
                                     <div className="row">
                                         <div className="col-6"></div>
                                         <div className="col-6 text-left">
