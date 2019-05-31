@@ -67,3 +67,7 @@ h1, h2, h3, h4, p {
 .footer p {
     color: #00020e;
 }
+
+.footer a {
+    color: black;
+}

@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
 // import { Link } from 'react-router-dom';
 
-import TopNav from "../navbar/navbar";
+import TopNav from "../../components/navbar/navbar";
 // import LinkList from '../link-list/link-list';
 // import TitleChanging from '../title-changing/title-changing';
-import ContentRow from '../content-row/content-row';
+import ContentRow from '../../components/content-row/content-row';
 import Particles from 'react-particles-js';
 
-import { mySites, particlesSettings } from '../App';
+import { mySites, particlesSettings } from '../../App';
 import { } from './stream-page.css'
 
 export default class StreamPage extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            users: []
+        }
+    }
 
     render() {
         return (
