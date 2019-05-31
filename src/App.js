@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 // Components
 import LinkList from './components/link-list/link-list';
 import HomePage from './views/home-page/home-page';
 import StreamPage from './views/stream-page/stream-page';
 import DevPage from './views/dev-page/dev-page';
-import TestPage from './views/test-page/test-page'
+import TestPage from './views/test-page/test-page';
 
 export const mySocials = [
     { name: "twitch", url: "https://www.twitch.tv/wookie" },
@@ -141,26 +141,25 @@ export const particlesSettings = {
 };
 
 class App extends Component {
-    TestPage = () => {
-        return <h1>This is a test page.</h1>
-    }
 
     render() {
         return (
             <Router>
                 <div className="App">
-                    <Route path="/" exact component={HomePage}/>
-                    <Route path="/stream" component={StreamPage}/>
-                    <Route path="/dev" component={DevPage}/>
+                    <Switch>
+                        <Route path="/" exact component={TestPage}/>
+                        {/* <Route path="/stream" component={StreamPage}/>
+                        <Route path="/dev" component={DevPage}/> */}
+                    </Switch>
 
-                    <section className="footer-wrapper">
+                    {/* <section className="footer-wrapper">
                         <div className="footer row">
                             <div className="col-12 align-self-center">
                                 <a href="https://www.nishok.io">Developed by Wookie</a>
                                 <LinkList links={mySocials} bkgdColor="#62d5ff" iconColor="#00020e" />
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </div>
             </Router>
         );
